@@ -1,0 +1,43 @@
+name: gymflow_fresh
+description: A new Flutter project for gym management
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.20.2  # Add this line 
+  connectivity_plus: ^5.0.0  
+  cupertino_icons: ^1.0.2
+  firebase_core: ^4.2.0
+  firebase_auth: ^6.1.1
+  cloud_firestore: ^6.0.3
+  flutter_dotenv: ^5.1.0
+  google_generative_ai: ^0.4.7
+  http: ^1.1.0  # ← ADD THIS LINE
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+   
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/icon/app_icon.png
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: assets/icon/app_icon.png
+
